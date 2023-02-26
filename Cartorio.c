@@ -159,7 +159,15 @@ int main()
 	
 	{
 		
-
+		char password[20] = "1234";
+		char user_password[20] = "a";
+		printf("Digite sua senha para acessar o cartorio EBAC: ");
+		scanf("%s",user_password);
+		if ( strcmp(password, user_password))
+		{
+			printf("senha incorreta");
+			return 1;
+		}
 		menu();
 		
 		created_by();
